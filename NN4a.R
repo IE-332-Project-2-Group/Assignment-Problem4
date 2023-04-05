@@ -54,3 +54,6 @@ plot(training_errors, type = "l", col = "blue", xlab = "# of Epochs",
 lines(testing_errors, type = "l", col = "red")
 legend("bottomright", legend = c("Training Errors", "Testing Errors"), 
        col = c("blue", "red"), lty = 1)
+
+
+# To answer 4b we will need to adjust the number of hidden layers (this increases complexity) and track what changes it makes.
