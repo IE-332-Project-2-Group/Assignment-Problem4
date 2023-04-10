@@ -18,7 +18,6 @@ aps_failure_data_clean$ac_000 <-
 training_data <- aps_failure_data_clean[1:295,]
 testing_data <- aps_failure_data_clean[296:590,]
 
-
 # Creates the neural net with the training data hidden = changes the complexity
 #to compare performance over epochs
 neural_net4a <-
@@ -30,11 +29,9 @@ neural_net4a <-
     algorithm = "sag"
   )
 
-
 # Initialize variables to track errors
 training_errors <- rep(0, 10)
 testing_errors <- rep(0, 10)
-
 
 # Loop over the number of epochs to collect errors
 for (i in 1:10) {
@@ -57,10 +54,7 @@ for (i in 1:10) {
 }
 
 #Plots the neural net
-
 par(mfrow = c(1, 2))
-#plot(neural_net4a,main = "Panel 1")
-
 
 # Plots the training and testing errors over the epochs
 plot(
